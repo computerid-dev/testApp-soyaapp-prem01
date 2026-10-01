@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Soya App Premium: akun premium streaming, musik, desain, dan AI dengan harga terjangkau. Order cepat via WhatsApp.">
+  <title>Soya App Premium</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home"><img src="assets/logo.jpg" alt="" width="40" height="40"><span>Soya App <small>Premium</small></span></a>
+      <nav class="nav" aria-label="Menu utama">
+        <a href="#produk">Produk</a><a href="#cara-order">Cara Order</a><a href="#kontak">Kontak</a>
+      </nav>
+      <button class="btn btn-primary" type="button" data-open-admin>Chat Admin</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Akses Premium, Hiburan Tanpa Batas</p>
+        <h1>Layanan premium favoritmu, harga bersahabat.</h1>
+        <p class="lead">Netflix, Spotify, Canva, CapCut, ChatGPT, dan banyak lagi. Pilih paket, kirim order ke admin, aktif dalam hitungan menit.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#produk">Lihat Produk</a>
+          <button class="btn btn-ghost" type="button" data-open-admin>Hubungi Admin</button>
+        </div>
+      </div>
+      <img class="hero-img" src="assets/banner.jpg" alt="Soya App Premium" width="1600" height="893">
+    </section>
+
+    <section class="trust wrap" aria-label="Keunggulan">
+      <div><strong>Garansi Aman</strong><span>Akun bergaransi dan aman digunakan</span></div>
+      <div><strong>Aktivasi Cepat</strong><span>Proses cepat tanpa menunggu lama</span></div>
+      <div><strong>Support 24/7</strong><span>Siap membantu kapan saja</span></div>
+    </section>
+
+    <section class="section wrap" id="produk">
+      <div class="section-head">
+        <h2>Daftar Produk & Harga</h2>
+        <p>Klik paket yang kamu mau untuk langsung order lewat WhatsApp.</p>
+      </div>
+      <div class="toolbar">
+        <div class="tabs" id="tabs" role="tablist" aria-label="Kategori"></div>
+        <input class="search" id="search" type="search" placeholder="Cari produk, mis. Netflix" aria-label="Cari produk">
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section wrap" id="cara-order">
+      <div class="section-head"><h2>Cara Order</h2></div>
+      <ol class="steps">
+        <li><strong>Pilih paket</strong><span>Cari produk dan durasi yang sesuai.</span></li>
+        <li><strong>Pilih admin</strong><span>Tentukan Admin 1 atau Admin 2.</span></li>
+        <li><strong>Kirim pesan</strong><span>Format order terisi otomatis di WhatsApp.</span></li>
+        <li><strong>Bayar & aktivasi</strong><span>Ikuti arahan admin sampai akun aktif.</span></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer" id="kontak">
+    <div class="wrap footer-inner">
+      <div><strong>Soya App Premium</strong><p>Terima kasih telah memilih Soya App Premium.</p></div>
+      <div>
+        <strong>Kontak</strong>
+        <p><a href="https://wa.me/62895622363550" target="_blank" rel="noopener">Admin 1: 0895-6223-63550</a></p>
+        <p><a href="https://wa.me/628976477656" target="_blank" rel="noopener">Admin 2: 0897-6477-656</a></p>
+        <p>Instagram &amp; TikTok: @soya_prem021</p>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Soya App Premium</p>
+  </footer>
+
+  <dialog id="orderDialog" aria-labelledby="dlgTitle">
+    <div class="dlg-head"><h3 id="dlgTitle">Order via WhatsApp</h3><button class="close" type="button" aria-label="Tutup" data-close>&times;</button></div>
+    <div class="summary" id="summary"></div>
+    <div class="admins" id="admins"></div>
+  </dialog>
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
